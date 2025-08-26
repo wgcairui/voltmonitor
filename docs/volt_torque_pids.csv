@@ -1,0 +1,53 @@
+Name,ShortName,ModeAndPID,Equation,Min Value,Max Value,Units,Header
+Control Module Voltage,Control Module Volta,220042,(A*256+B)/1000,0,15,V,7E0
+Hybrid Pack Remaining (SOC),Hybrid Pack Remainin,22005B,A*100/255,0,100,%,7E0
+HV Battery Pack Voltage,HV Battery Pack Volt,2201BB,((A*256)+B)/10,0,6553.5,V,7E0
+HV Battery Temperature Max,HV Battery Temperatu,220425,A-40,-40,215,°C,7E0
+HV Battery Temperature Min,HV Battery Temperatu,220426,A-40,-40,215,°C,7E0
+HV Battery Current,HV Battery Current,2204AF,((A*256+B)-32768)/100,-327.68,327.67,A,7E0
+HV Battery Voltage,HV Battery Voltage,2204B0,((A*256+B)*256+C)/100,0,400,V,7E0
+12V Battery Voltage,12V Battery Voltage,22437D,(A*256+B)/1000,0,16,V,7E0
+HV Battery Temperature,HV Battery Temperatu,22434F,A-40,-40,215,°C,7E4
+Onboard Charger AC Voltage,Onboard Charger AC V,224372,((A*256)+B)/10,0,6553.5,V,7E0
+Onboard Charger AC Current,Onboard Charger AC C,224373,((A*256)+B)/100,0,655.35,A,7E0
+Onboard Charger DC Voltage,Onboard Charger DC V,224374,((A*256)+B)/10,0,6553.5,V,7E0
+Onboard Charger DC Current,Onboard Charger DC C,224375,((A*256)+B)/100,0,655.35,A,7E0
+LV Charge Amps,LV Charge Amps,22437E,(S_A*256+B)/20,-100,100,A,7E0
+Charging Power,Charging Power,2243A5,((A*256)+B)/100,0,655.35,kW,7E0
+Onboard Charger Voltage,Onboard Charger Volt,224368,((A*256)+B)/100,0,655.35,V,7E4
+Onboard Charger Current,Onboard Charger Curr,224369,((A*256)+B)/100,0,655.35,A,7E4
+Monitor Status Since DTCs Cleared,Monitor Status Since,220001,32 bits,,,Bitfield,7E0
+OBD Standards,OBD Standards,22001C,A,1,250,Encoded,7E0
+Monitor Status This Drive Cycle,Monitor Status This ,220041,32 bits,,,Bitfield,7E0
+Distance with MIL On,Distance with MIL On,220021,(A*256)+B,0,65535,km,7E0
+Distance Since Codes Cleared,Distance Since Codes,220031,(A*256)+B,0,65535,km,7E0
+Engine Coolant Temperature,Engine Coolant Tempe,220005,A-40,-40,215,°C,7E0
+Engine RPM,Engine RPM,22000C,((A*256)+B)/4,0,16383.75,RPM,7E0
+Engine Run Time,Engine Run Time,22001F,(A*256)+B,0,65535,seconds,7E0
+Engine Oil Temperature,Engine Oil Temperatu,221154,A-40,-40,215,°C,7E0
+Engine Torque,Engine Torque,22203F,((256*A)+B)/4,0,200,Nm,7E0
+Short Term Fuel Trim Bank 1,Short Term Fuel Trim,220006,(A-128)*100/128,-100,99.22,%,7E0
+Long Term Fuel Trim Bank 1,Long Term Fuel Trim ,220007,(A-128)*100/128,-100,99.22,%,7E0
+Short Term Fuel Trim Bank 2,Short Term Fuel Trim,220008,(A-128)*100/128,-100,99.22,%,7E0
+Long Term Fuel Trim Bank 2,Long Term Fuel Trim ,220009,(A-128)*100/128,-100,99.22,%,7E0
+HVAC Compressor Speed,HVAC Compressor Spee,221C40,((A*256)+B),0,65535,RPM,7E0
+HVAC High Side Pressure,HVAC High Side Press,221C41,((A*256)+B)/10,0,6553.5,kPa,7E0
+HVAC Low Side Pressure,HVAC Low Side Pressu,221C42,((A*256)+B)/10,0,6553.5,kPa,7E0
+Motor A RPM,Motor A RPM,220272,((A*256)+B)/4,-8192,8191,RPM,7E0
+Motor A Torque,Motor A Torque,220273,((A*256)+B)/4-8192,-2048,2047,Nm,7E0
+Motor B RPM,Motor B RPM,220274,((A*256)+B)/4,-8192,8191,RPM,7E0
+Motor B Torque,Motor B Torque,220275,((A*256)+B)/4-8192,-2048,2047,Nm,7E0
+Total Motor Torque,Total Motor Torque,22F40C,((A*256)+B)/8-4096,-4096,4095.875,Nm,7E0
+Fuel Pressure,Fuel Pressure,22000A,A*3,0,765,kPa,7E0
+Intake Manifold Pressure,Intake Manifold Pres,22000B,A,0,255,kPa,7E0
+Absolute Barometric Pressure,Absolute Barometric ,220033,A,0,255,kPa,7E0
+Intake Air Temperature,Intake Air Temperatu,22000F,A-40,-40,215,°C,7E0
+Catalyst Temperature Bank 1 Sensor 1,Catalyst Temperature,22003C,((A*256)+B)/10-40,-40,6513.5,°C,7E0
+Ambient Air Temperature,Ambient Air Temperat,220046,A-40,-40,215,°C,7E0
+Power Electronics Cooling Loop,Power Electronics Co,221C43,A-40,-40,215,°C,7E0
+Vehicle Speed,Vehicle Speed,22000D,A,0,255,km/h,7E0
+Throttle Position,Throttle Position,220011,A*100/255,0,100,%,7E0
+Fuel Level,Fuel Level,22002F,A*100/255,0,100,%,7E0
+Fuel Remaining,Fuel Remaining,22002F,(A/255)*9.3122,0,9.3,gallons,7E0
+Absolute Throttle Position B,Absolute Throttle Po,220047,A*100/255,0,100,%,7E0
+Commanded Throttle Position,Commanded Throttle P,22004C,A*100/255,0,100,%,7E0

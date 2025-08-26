@@ -1,0 +1,72 @@
+[
+  {
+    "PID": "BD",
+    "Mode": "01",
+    "Description": "II Parameter IDs (PIDs)",
+    "Data Length": "",
+    "Unit": "",
+    "Formula": "",
+    "Range": "",
+    "Notes": ""
+  },
+  {
+    "PID": "01",
+    "Mode": "01",
+    "Description": "- Calculated Engine Load",
+    "Data Length": "1 bytes",
+    "Unit": "%",
+    "Formula": "A * 100 / 255",
+    "Range": "0-100%",
+    "Notes": "Notes: Indicates the current engine load"
+  },
+  {
+    "PID": "04",
+    "Mode": "01",
+    "Description": "Engine Coolant Temperature",
+    "Data Length": "1 bytes",
+    "Unit": "°C",
+    "Formula": "A - 40",
+    "Range": "-40 to 215°C",
+    "Notes": ""
+  },
+  {
+    "PID": "05",
+    "Mode": "01",
+    "Description": ": Engine Oil Temperature",
+    "Data Length": "1 bytes",
+    "Unit": "°C",
+    "Formula": "A - 40",
+    "Range": "-40 to 215°C",
+    "Notes": ""
+  },
+  {
+    "PID": "0C",
+    "Mode": "01",
+    "Description": "Engine RPM",
+    "Data Length": "2 bytes",
+    "Unit": "RPM",
+    "Formula": "((A*256)+B)/4",
+    "Range": "0-16383.75 RPM",
+    "Notes": ""
+  },
+  {
+    "PID": "0D",
+    "Mode": "01",
+    "Description": ": Vehicle Speed Sensor",
+    "Data Length": "1 bytes",
+    "Unit": "km/h",
+    "Formula": "A",
+    "Range": "0-255 km/h",
+    "Notes": ""
+  },
+  {
+    "PID": "1F",
+    "Mode": "01",
+    "Description": "Run time since engine start",
+    "Data Length": "2 bytes",
+    "Unit": "seconds",
+    "Formula": "(A*256)+B",
+    "Range": "0-65535 seconds",
+    "Notes": ""
+  }
+]

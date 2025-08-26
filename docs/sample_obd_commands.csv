@@ -1,0 +1,8 @@
+﻿PID,Mode,Description,Data Length,Unit,Formula,Range,Notes
+BD,01,II Parameter IDs (PIDs),,,,,
+01,01,- Calculated Engine Load,1 bytes,%,A * 100 / 255,0-100%,Notes: Indicates the current engine load
+04,01,Engine Coolant Temperature,1 bytes,°C,A - 40,-40 to 215°C,
+05,01,: Engine Oil Temperature,1 bytes,°C,A - 40,-40 to 215°C,
+0C,01,Engine RPM,2 bytes,RPM,((A*256)+B)/4,0-16383.75 RPM,
+0D,01,: Vehicle Speed Sensor,1 bytes,km/h,A,0-255 km/h,
+1F,01,Run time since engine start,2 bytes,seconds,(A*256)+B,0-65535 seconds,
